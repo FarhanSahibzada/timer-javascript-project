@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+width: 100vw;
+}
+
+#timerh,#timers,#timerm{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#timers{
+    font-size: 17px;
+}
+p{
+    padding: 0px 10px !important;
+    
+}
+
+#btnplaygame{
+    background-color: #db2121;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#btnplaygame:active{
+    background-color: #fff;
+    color: #db2121;
+}
+button{
+    padding: 8px 10px;
+font-weight: 520;
+background-color: #96ce13;
+color: rgb(177, 89, 55);
+border: none;
+font-size: 17px;
+font-family: Arial, Helvetica, sans-serif;
+display: block;
+margin: auto;
+}
+</style>
+
+</head>
+<body>
+    
+
+
+<div class="container">
+
+
+    <p id="timerh">00: </p>
+    <p id="timerm">00: </p>
+    <p id="timers">00 </p>
+    
+
+</div>
+
+<div style="display: flex; gap: 2px; ">
+<button onclick="start()">START</button>
+<button onclick="stop()">Stop</button>
+<button onclick="rest()">Reset</button>
+</div>
+
+<!-- <img id="img" src="" alt="Click Play Game " width="300px" height="300px" style="border: none;">
+
+<button id="btnplaygame" onclick="play()">Play game</button> -->
+
+<script src="app.js"></script>
+
+</body>
+</html>
